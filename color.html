@@ -11,6 +11,48 @@
         }
         p {
              background-color: antiquewhite;
+             font-size: 20px;
+        }
+        a:link {
+            color: purple;
+            text-decoration: none;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        a:active {
+            color: blue;
+        } 
+        .img-link {
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .img-link:link {
+            border: 2px solid blue;
+        }
+        .img-link:visited {
+            border: 2px solid green;
+        }
+        .img-link:hover {
+            border: 2px solid red;
+        }
+        .img-link:active {
+            border: 2px solid yellow;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: green;
         }
     </style>
 </head>
@@ -22,5 +64,26 @@
     <!--Internal css - This is usually placed in the head tag-->
     <!--External css - This is linked in the head tag using <link>-->
    
+    <!--HTML Links-->
+    <h4>Absolute URL</h4>
+    <a href="http://google.com" target="_blank">Google</a>
+    <br>
+    <a href="https://www.codewars.com/" target="_blank" title="Go to codewars website">Codewars</a>
+    <br>
+    <h4>Relative URL</h4>
+    <p>
+    <a href="images/boat.jpg">A boat</a>
+    </p>
+    <!--Image as a link-->
+    <a href="https://en.wikipedia.org/wiki/Cruise_ship" target="_blank">
+        <img class="img-link" src="images/boat.jpg" alt="A cruise ship on the pacific ocean" width="100px" height="100px">
+    </a>
+    <br>
+    <!--Email as a link-->
+     <a href="mailto:rafiuayomide1822@gmail.com">Send email</a> 
+    <br>
+     <!--Button as a link-->
+    <a href="https://www.codewars.com/" target="_blank">
+        <button>Visit Codewars</button>
 </body>
 </html>
