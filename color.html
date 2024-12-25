@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML CSS | HTML Favicon</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="color.css">
      <style>
         body {
@@ -60,6 +61,12 @@
         button:hover {
             background-color: green;
         }
+        pre {
+            background-color: lightgrey;
+            color: red;
+            padding: 10px;
+            border: 1px solid black;
+        }
     </style>
 </head>
 <body>
@@ -98,8 +105,18 @@
     <img src="images/merry.jpg" alt="Merry Christmas" width="100px" height="100px">
     <br>
     <!--Image with external url-->
-    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="104" height="142" style="float: left;">
-    
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="104" height="142" float="left">
+    <br>
+    <!--HTML Favicon-->
+    <p>If you want to use an image as a favicon, use the following code:</p>
+    <pre>
+        link rel="icon" href="images/favicon.ico" type="image/x-icon"
+    </pre>
+    <p>Change the href attribute to the URL of the image you want to use as a favicon.</p>
+    <p>For example, if you want to use the W3Schools logo as a favicon, use this code:</p>
+    <pre>
+        link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon"
+    </pre>
     
     <p>Visit <a href="https://www.w3schools.com">W3Schools.com</a> for more information.</p>
 
