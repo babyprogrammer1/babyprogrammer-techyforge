@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS | HTML Favicon</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="color.css">
+     <style>
+        body {
+            background-image: url('images/twenty.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        h1 {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        p {
+             background-color: antiquewhite;
+             font-size: 20px;
+        }
+        a:link {
+            color: purple;
+            text-decoration: none;
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        a:active {
+            color: blue;
+        } 
+        .img-link {
+            border: 2px solid black;
+            border-radius: 10px;
+        }
+        .img-link:link {
+            border: 2px solid blue;
+        }
+        .img-link:visited {
+            border: 2px solid green;
+        }
+        .img-link:hover {
+            border: 2px solid red;
+        }
+        .img-link:active {
+            border: 2px solid yellow;
+        }
+        button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: green;
+        }
+        pre {
+            background-color: lightgrey;
+            color: red;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--Inline css-->
+    <h1 style="color: red;">This is a heading</h1>
+    <p style="color: blue;">This is a paragraph.</p>
+    <p style="color: green;">This is another paragraph.</p>
+    <!--Internal css - This is usually placed in the head tag-->
+    <!--External css - This is linked in the head tag using <link>-->
+   
+    <!--HTML Links-->
+    <h4>Absolute URL</h4>
+    <a href="http://google.com" target="_blank">Google</a>
+    <br>
+    <a href="https://www.codewars.com/" target="_blank" title="Go to codewars website">Codewars</a>
+    <br>
+    <h4>Relative URL</h4>
+    <p>
+    <a href="images/boat.jpg">A boat</a>
+    </p>
+    <!--Image as a link-->
+    <a href="https://en.wikipedia.org/wiki/Cruise_ship" target="_blank">
+        <img class="img-link" src="images/boat.jpg" alt="A cruise ship on the pacific ocean" width="100px" height="100px">
+    </a>
+    <br>
+    <!--Email as a link-->
+     <a href="mailto:rafiuayomide1822@gmail.com">Send email</a> 
+    <br>
+     <!--Button as a link-->
+    <a href="https://www.codewars.com/" target="_blank">
+        <button>Visit Codewars</button>
+    </a>
+    <br>
+
+    <!--Image-->
+    <img src="images/merry.jpg" alt="Merry Christmas" width="100px" height="100px">
+    <br>
+    <!--Image with external url-->
+    <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com" width="104" height="142" float="left">
+    <br>
+    <!--HTML Favicon-->
+    <p>If you want to use an image as a favicon, use the following code:</p>
+    <pre>
+        link rel="icon" href="images/favicon.ico" type="image/x-icon"
+    </pre>
+    <p>Change the href attribute to the URL of the image you want to use as a favicon.</p>
+    <p>For example, if you want to use the W3Schools logo as a favicon, use this code:</p>
+    <pre>
+        link rel="icon" href="https://www.w3schools.com/favicon.ico" type="image/x-icon"
+    </pre>
+    
+    <p>Visit <a href="https://www.w3schools.com">W3Schools.com</a> for more information.</p>
+
+</body>
+</html>
