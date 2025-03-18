@@ -6,50 +6,51 @@
     <title>Image Gallery</title>
     <style>
         * {
-            box-sizing: border-box;
+            box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
         }
         .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
+            display: flex; /* Enables flexbox layout */
+            flex-wrap: wrap; /* Allows items to wrap to the next row */
+            gap: 10px; /* Adds spacing between items */
         }
         .gallery-item {
-            position: relative;
+            position: relative; /* Positions overlay relative to the container */
             display: inline-block;
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden; /* Prevents image overflow when scaling */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
         }
         .gallery-item img {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
+            width: 200px; /* Fixed width for images */
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensures images maintain aspect ratio */
             display: block;
         }
         .gallery-item:hover img {
-            transform: scale(1.1);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transform: scale(1.1); /* Scales image on hover */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
         }
         .overlay {
-            position: absolute;
+            position: absolute; /* Positions overlay over the image */
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            display: flex;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: white; /* Text color */
+            display: flex; /* Centers text */
             align-items: center;
             justify-content: center;
-            opacity: 0;
-            transition: opacity 0.3s ease;
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.3s ease; /* Smooth fade-in effect */
         }
         .gallery-item:hover .overlay {
-            opacity: 1;
+            opacity: 1; /* Shows overlay on hover */
         }
     </style>
 </head>
 <body>
     <div class="gallery">
+        <!-- Each gallery-item contains an image and an overlay -->
         <div class="gallery-item">
             <img src="images/image1.jpg" alt="Flamingo">
             <div class="overlay">Pink Flamingo</div>
