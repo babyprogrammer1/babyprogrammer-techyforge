@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tooltip</title>
+    <style>
+        * {
+            box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+        }
+        button {
+            padding: 10px 20px; /* Adds padding inside the button */
+            background: #007bff; /* Button color */
+            color: white; /* Text color */
+            border: none; /* Removes default border */
+            border-radius: 5px; /* Rounds the corners */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+        }
+        .tooltip-container {
+            position: relative; /* Positions the tooltip relative to the container */
+            display: inline-block;
+            margin: 50px;
+        }
+        .tooltip {
+            position: absolute; /* Positions the tooltip relative to the container */
+            bottom: 100%; /* Places the tooltip above the trigger */
+            left: 50%; /* Centers the tooltip horizontally */
+            transform: translateX(-50%); /* Centers the tooltip horizontally */
+            padding: 10px; /* Adds padding inside the tooltip */
+            background: #333; /* Background color */
+            color: white; /* Text color */
+            border-radius: 5px; /* Rounds the corners */
+            opacity: 0; /* Hidden by default */
+            transition: opacity 0.3s ease; /* Smooth fade-in effect */
+            white-space: nowrap; /* Prevents text wrapping */
+        }
+        .tooltip::after {
+            content: ''; /* Adds a pseudo-element */
+            position: absolute; /* Positions the pseudo-element relative to the tooltip */
+            top: 100%; /* Places the pseudo-element below the tooltip */
+            left: 50%; /* Centers the pseudo-element horizontally */
+            transform: translateX(-50%); /* Centers the pseudo-element horizontally */
+            border: 5px solid transparent; /* Adds a border */
+            border-top-color: #333; /* Sets border color */
+        }
+        .tooltip-container:hover .tooltip {
+            opacity: 1; /* Shows tooltip on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="tooltip-container">
+        <!-- Tooltip trigger -->
+        <button>Hover me</button>
+        <!-- Tooltip element -->
+        <div class="tooltip">This is a tooltip</div>
+    </div>
+</body>
+</html>
