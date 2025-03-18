@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .gallery-item {
+            position: relative;
+            display: inline-block;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        .gallery-item:hover .overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <div class="gallery-item">
+            <img src="images/image1.jpg" alt="Flamingo">
+            <div class="overlay">Pink Flamingo</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/image2.jpg" alt="Leopard">
+            <div class="overlay">Leopard</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/image3.jpg" alt="Tiger">
+            <div class="overlay">Tiger</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/image4.jpg" alt="Giraffe">
+            <div class="overlay">Giraffe</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/image5.jpg" alt="Squirrel">
+            <div class="overlay">Squirrel</div>
+        </div>
+        <div class="gallery-item">
+            <img src="images/image6.jpg" alt="Fox">
+            <div class="overlay">Fox</div>
+        </div>
+    </div>
+</body>
+</html>
