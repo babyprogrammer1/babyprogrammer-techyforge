@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <style>
+        * {
+            margin: 0; /* Removes default margin */
+            padding: 0; /* Removes default padding */
+            box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+        }
+        .hero {
+            position: relative; /* Positions the hero section */
+            height: 100vh; /* Sets the height to 100% of the viewport height */
+            background: linear-gradient(to right, #ff416c, #ff4b2b); /* Sets a gradient background */
+            color: white; /* Sets text color */
+        }
+
+        .hero h1 {
+            position: absolute; /* Positions the heading */
+            top: 50%; /* Positions the heading at the center vertically */
+            left: 50%; /* Positions the heading at the center horizontally */
+            transform: translate(-50%, -50%); /* Centers the heading */
+            font-size: 3em; /* Font size for heading */
+            animation: fadeIn 2s ease-in-out; /* Adds fade-in animation */
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Starts with 0% opacity */
+            }
+            to {
+                opacity: 1; /* Ends with 100% opacity */
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>Welcome to Our Website</h1>
+    </section>
+</body>
+</html>
