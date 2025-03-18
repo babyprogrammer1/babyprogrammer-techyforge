@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Bubble</title>
+    <style>
+        .chat-bubble {
+            position: fixed; /* Keeps the chat bubble in a fixed position */
+            right: 20px;/* Positions the chat bubble on the right side */
+            bottom: 20px; /* Positions the chat bubble at the bottom */
+            height: 60px; /* Fixed height for the chat bubble */
+            width: 60px; /* Fixed width for the chat bubble */
+            background: #007bff; /* Sets background color */
+            border-radius: 50%; /* Rounds the corners */
+            color: white; /* Text color */
+            display: flex; /* Centers text */
+            align-items: center;
+            justify-content: center;
+            font-size: 24px; /* Font size for chat icon */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            transition: all 0.3s ease; /* Smooth hover effects */
+        }
+
+        .chat-bubble:hover {
+            background: #0056b3; /* Changes background color on hover */
+            transform: translateY(-5px); /* Moves chat bubble up slightly on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-bubble">💬</div>
+</body>
+</html></svg>
