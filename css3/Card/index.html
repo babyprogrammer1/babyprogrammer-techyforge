@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout</title>
+    <style>
+        * {
+            box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
+        }
+        .card-container {
+            text-align: center; /* Centers the cards horizontally */
+        }
+        .card {
+            background: #fff; /* Sets background color */
+            display: inline-block; /* Aligns cards in rows */
+            margin: 10px; /* Adds spacing between cards */
+            width: 400px; /* Fixed width for each card */
+            border: 1px solid #ddd; /* Adds a border */
+            border-radius: 10px; /* Rounds the corners */
+            text-align: center; /* Centers text */
+            transition: all 0.3s ease; /* Smooth hover effects */
+        }
+        .card img {
+            width: 100%; /* Makes image fill the card */
+            height: 200px; /* Fixed height for images */
+            object-fit: cover; /* Ensures images maintain aspect ratio */
+            margin-bottom: 10px; /* Adds spacing below the image */
+            border-radius: 10px 10px 0 0; /* Rounds top corners */
+        }
+        .card h3 {
+            font-size: 24px; /* Font size for card title */
+        }
+        .card p {
+            font-size: 16px; /* Font size for card content */
+            color: #666; /* Sets text color */
+            padding: 0 20px; /* Adds padding to the sides */
+        }
+        .card:hover {
+            transform: scale(1.05); /* Slightly enlarges the card on hover */
+            background: #f9f9f9; /* Changes background color */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="card-container">
+        <!-- Each card represents an item with an image, title, and description -->
+        <div class="card">
+            <img src="images/image1.jpg" alt="Flamingo">
+            <h3>Pink Flamingo</h3>
+            <p>Pink flamingos are wading birds known for their vibrant pink feathers, long legs, and graceful necks.</p>
+        </div>
+        <div class="card">
+            <img src="images/image2.jpg" alt="Leopard">
+            <h3>Leopard</h3>
+            <p>Leopards are large cats known for their golden, spotted coats and remarkable agility, making them excellent climbers and hunters.</p>
+        </div>
+        <div class="card">
+            <img src="images/image3.jpg" alt="Tiger">
+            <h3>Tiger</h3>
+            <p>Tigers are the largest wild cats in the world, known for their striking orange coats with black stripes and powerful build.</p>
+        </div>
+        <div class="card">
+            <img src="images/image4.jpg" alt="Giraffe">
+            <h3>Giraffe</h3>
+            <p>Giraffes are the tallest land animals, known for their long necks, unique spotted patterns, and gentle demeanor.</p>
+        </div>
+        <div class="card">
+            <img src="images/image5.jpg" alt="Squirrel">
+            <h3>Squirrel</h3>
+            <p>Squirrels are small rodents known for their bushy tails, agility, and habit of storing nuts for the winter.</p>
+        </div>
+        <div class="card">
+            <img src="images/image6.jpg" alt="Fox">
+            <h3>Fox</h3>
+            <p>Foxes are small to medium-sized omnivorous mammals known for their bushy tails, pointed ears, and cunning behavior.</p>
+        </div>
+    </div>
+</body>
+</html>

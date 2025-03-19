@@ -15,7 +15,7 @@
         }
         .gallery-item {
             position: relative; /* Positions overlay relative to the container */
-            display: inline-block;
+            display: inline-block; /* Aligns items inline */
             overflow: hidden; /* Prevents image overflow when scaling */
             transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
         }
@@ -23,7 +23,7 @@
             width: 200px; /* Fixed width for images */
             height: 200px; /* Fixed height for images */
             object-fit: cover; /* Ensures images maintain aspect ratio */
-            display: block;
+            display: block; /* Ensures the image is treated as a block element */
         }
         .gallery-item:hover img {
             transform: scale(1.1); /* Scales image on hover */
@@ -31,15 +31,15 @@
         }
         .overlay {
             position: absolute; /* Positions overlay over the image */
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 0; /* Aligns overlay to the top */
+            left: 0; /* Aligns overlay to the left */
+            width: 100%; /* Makes overlay cover the entire width */
+            height: 100%; /* Makes overlay cover the entire height */
             background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
             color: white; /* Text color */
-            display: flex; /* Centers text */
-            align-items: center;
-            justify-content: center;
+            display: flex; /* Enables flexbox for centering text */
+            align-items: center; /* Vertically centers text */
+            justify-content: center; /* Horizontally centers text */
             opacity: 0; /* Hidden by default */
             transition: opacity 0.3s ease; /* Smooth fade-in effect */
         }

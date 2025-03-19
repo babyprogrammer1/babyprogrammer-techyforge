@@ -9,34 +9,34 @@
             box-sizing: border-box; /* Ensures padding and border are included in element's total width and height */
         }
         .pricing-card {
-            position: absolute; /* Centers the pricing card */
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: absolute; /* Positions the pricing card container */
+            top: 50%; /* Vertically centers the container */
+            left: 50%; /* Horizontally centers the container */
+            transform: translate(-50%, -50%); /* Adjusts position to center */
         }
         .pricing-plan {
             display: inline-block; /* Aligns plans horizontally */
             width: 200px; /* Fixed width for each plan */
             padding: 20px; /* Adds padding inside the plan */
-            border: 1px solid #ddd; /* Adds a border */
+            border: 1px solid #ddd; /* Adds a light border */
             border-radius: 10px; /* Rounds the corners */
-            text-align: center; /* Centers text */
+            text-align: center; /* Centers text inside the plan */
             transition: all 0.3s ease; /* Smooth hover effects */
         }
         .pricing-plan:hover {
             transform: scale(1.05); /* Slightly enlarges the plan on hover */
-            background: #f9f9f9; /* Changes background color */
+            background: #f9f9f9; /* Changes background color on hover */
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow effect */
-            border: 3px solid #00bfff; /* Adds a glowing border */
+            border: 3px solid #00bfff; /* Adds a glowing blue border */
         }
         .pricing-plan h3 {
-            font-size: 24px; /* Font size for plan title */
+            font-size: 24px; /* Font size for the plan title */
             margin-bottom: 10px; /* Adds spacing below the title */
         }
         .pricing-plan p {
-            font-size: 16px; /* Font size for price */
-            font-weight: bold; /* Makes price text bold */
-            color: #666; /* Sets text color */
+            font-size: 16px; /* Font size for the price */
+            font-weight: bold; /* Makes the price text bold */
+            color: #666; /* Sets the text color */
         }
     </style>
 </head>
